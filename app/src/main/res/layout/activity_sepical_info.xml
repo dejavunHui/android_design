@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login_register.SpecialInfoActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_bk"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/rg_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:hint="用户名"
+            android:textSize="25sp"
+            android:textColor="@color/cpb_white"
+            android:background="@drawable/edit_bound_bg"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <EditText
+                android:id="@+id/rg_born_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="120dp"
+                android:hint="出生日期"
+                android:textSize="25sp"
+                android:textColor="@color/cpb_white"
+                android:background="@drawable/edit_bound_bg"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <com.gc.materialdesign.views.CheckBox
+                android:id="@+id/rg_gender_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                />
+            <TextView
+                android:id="@+id/rg_gender_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:textSize="20sp"
+                android:layout_toRightOf="@+id/rg_gender_male"
+                android:layout_centerVertical="true"/>
+
+            <com.gc.materialdesign.views.CheckBox
+                android:id="@+id/rg_gender_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_toRightOf="@+id/rg_gender_tv"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:textSize="20sp"
+                android:layout_toRightOf="@+id/rg_gender_female"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+
+        <com.dd.processbutton.iml.ActionProcessButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:text="完成"
+            app:pb_colorNormal="@color/cpb_grey"
+            app:pb_colorPressed="@color/colorPrimaryDark"
+            app:pb_colorComplete="@color/cpb_complete_state_selector"
+            app:pb_textError="注册失败"
+            app:pb_textComplete="注册成功"
+            app:pb_textProgress="请稍等"
+            app:pb_colorError="@color/cpb_error_state_selector"
+            android:minWidth="100dp"
+            android:alpha="0011"
+            />
+
+
+
+        <TextView
+            android:id="@+id/rg_gotologin_tv_sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已有帐号，去登录"
+            android:textSize="20sp"
+            android:textColor="@color/cpb_white"
+            android:layout_gravity="bottom|right"
+            android:layout_marginTop="130dp"
+
+            />
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
